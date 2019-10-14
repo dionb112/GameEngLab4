@@ -1,9 +1,9 @@
 #pragma once
 #include "SFML/Graphics.hpp"
+#include <vector>
 class Component {
 public:
 	virtual ~Component();
-	virtual void foo() = 0;
 protected:
-	Component();
+	Component() {};
 };
