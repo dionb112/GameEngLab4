@@ -4,7 +4,7 @@
 #include <iostream>
 class Component {
 public:
-	virtual ~Component();
+	virtual ~Component() {} ;
 protected:
 	Component() {};
 };
