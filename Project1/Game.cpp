@@ -16,8 +16,23 @@ bool Game::Initialize(const char* title, int xpos, int ypos, int width, int heig
 {
 	player.addComponent(healthComponent);
 	player.addComponent(positionComponent);
+	player.addComponent(inputComponent);
+	alien.addComponent(healthComponent);
+	alien.addComponent(positionComponent);
+	dog.addComponent(healthComponent);
+	dog.addComponent(positionComponent);
+	cat.addComponent(positionComponent);
 	controlSystem.addEntity(player);
 	renderSystem.addEntity(player);
+	healthSystem.addEntity(player);
+	renderSystem.addEntity(alien);
+	healthSystem.addEntity(alien);
+	aISystem.addEntity(alien);
+	renderSystem.addEntity(dog);
+	healthSystem.addEntity(dog);
+	aISystem.addEntity(dog);
+	renderSystem.addEntity(cat);
+	aISystem.addEntity(cat); // cat has no health component
 
 	if(SDL_Init(SDL_INIT_EVERYTHING) == 0)
 	{

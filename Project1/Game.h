@@ -4,8 +4,12 @@
 #include "Animation.h"
 #include "HealthComponent.h"
 #include "PositionComponent.h"
+#include "InputComponent.h"
 #include "ControlSystem.h"
 #include "RenderSystem.h"
+#include "AISystem.h"
+#include "HealthSystem.h"
+
 static const int SPRITE_SIZE = 32;
 class Game
 {
@@ -22,12 +26,18 @@ public:
 	void CleanUp();
 private:
 	Entity player;
+	Entity alien;
+	Entity dog;
+	Entity cat;
 	HealthComponent healthComponent;
 	PositionComponent positionComponent;
+	InputComponent inputComponent;
 	ControlSystem controlSystem;
 	RenderSystem renderSystem;
+	AISystem aISystem;
+	HealthSystem healthSystem;
 
-	int m_spriteX;
+	int m_spriteX; 
 	int m_spriteY;
 	Animation fsm;
 	int m_pressed;

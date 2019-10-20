@@ -139,6 +139,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Falling.h" />
     <ClInclude Include="HealthComponent.h" />
+    <ClInclude Include="HealthSystem.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="InputComponent.h" />
     <ClInclude Include="Jumping.h" />
@@ -154,6 +155,7 @@
     <ClCompile Include="ControlSystem.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Falling.cpp" />
+    <ClCompile Include="HealthSystem.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="Jumping.cpp" />
     <ClCompile Include="main.cpp" />

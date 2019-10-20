@@ -4,8 +4,8 @@ class InputComponent : public Component {
 public:
 	InputComponent() : m_input() {}
 	// Data only
-	sf::Event getInput() { return m_input; }
-	void setInput(sf::Event t_input) { this->m_input = t_input; }
+	SDL_Event getInput() { return m_input; }
+	void setInput(SDL_Event t_input) { this->m_input = t_input; }
 private:
-	sf::Event m_input;
+	SDL_Event m_input;
 };
